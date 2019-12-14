@@ -1,5 +1,9 @@
+step = 1
+
 def move(fr, to):
-    print(f"Move from {fr} to {to}")
+    global step
+    print(f"Step {step}:\tMove from {fr} to {to}")
+    step += 1
 
 def hanoi(fr, to, via, n):
     if n == 0:
